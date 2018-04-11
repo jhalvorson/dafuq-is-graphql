@@ -116,9 +116,12 @@ export default class Presentation extends React.Component {
           </List>
         </Slide>
 
-        <Slide textColor="text">
-          <Heading size={6}>Demo time</Heading>
-          <Image src="https://media.giphy.com/media/A34x7CEKUkCyc/giphy.gif" width="500px" />
+        <Slide transition={['fade']} textColor="text">
+          <Image src="https://media.giphy.com/media/A34x7CEKUkCyc/giphy.gif" width="750px" />
+        </Slide>
+
+        <Slide>
+          <Heading textColor="white">REST APIs</Heading>
         </Slide>
 
         <Slide transition={['fade']} bgColor="primary" textColor="text">

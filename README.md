@@ -1,3 +1,5 @@
 # Dafuq is GraphQL
 
-An introduction to GraphQL - internal presentation for [Signal](https://cellosignal.com).
+A presentation built using Spectactle for the Engineering team at [Signal](https://cellosignal.com).
+
+

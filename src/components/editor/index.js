@@ -15,7 +15,7 @@ function graphQLFetcher(graphQLParams) {
 
 const Wrapper = styled.div`
   .graphiql-container {
-    min-height: 450px;
+    min-height: 550px;
     text-align: left;
     margin-top: 40px;
   }
