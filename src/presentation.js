@@ -11,6 +11,9 @@ import {
   Text,
   ComponentPlayground,
   CodePane,
+  BaseProps,
+  Fill,
+  Image
 } from 'spectacle';
 import createTheme from 'spectacle/lib/themes/default';
 import Editor from './components/editor';
@@ -58,16 +61,16 @@ export default class Presentation extends React.Component {
             Dafuq is GraphQL?
           </Heading>
           <Text margin="50px 0 0" textColor="text" textFont="secondary" textSize="35px">
-            GraphQL, it's so 🔥 right now
+            so 🔥 right now
           </Text>
         </Slide>
         <Slide transition={['fade']} bgColor="primary" textColor="text">
-
-          <Heading size={6} textColor="text" caps>
+          <Heading size={6}>🤓</Heading>
+          <Heading size={6} textColor="text" >
             Technically speaking
           </Heading>
 
-          <BlockQuote textColor="text">
+          <BlockQuote textColor="text" margin="50px">
             <Quote textColor="text" textSize="30px">
               GraphQL is a query language for your API, and a server-side runtime for executing queries by using a type system you define for your data. GraphQL isn't tied to any specific database or storage engine and is instead backed by your existing code and data.
             </Quote>
@@ -77,8 +80,9 @@ export default class Presentation extends React.Component {
         </Slide>
 
         <Slide transition={['fade']} bgColor="primary" textColor="text">
-          <Heading size={6} caps textColor="text">
-          😏 What actually is it?
+          <Heading size={6}>😏</Heading>
+          <Heading size={6}  textColor="text">
+          What actually is it?
           </Heading>
           <List>
             <ListItem>Item 1</ListItem>
@@ -89,7 +93,7 @@ export default class Presentation extends React.Component {
         </Slide>
 
         <Slide transition={['fade']} bgColor="primary" textColor="text">
-          <Heading size={6} caps textColor="text">
+          <Heading size={6}  textColor="text">
            The benefits
           </Heading>
           <List>
@@ -101,7 +105,7 @@ export default class Presentation extends React.Component {
         </Slide>
 
         <Slide transition={['fade']} bgColor="primary" textColor="text">
-          <Heading size={6} caps textColor="text">
+          <Heading size={6}  textColor="text">
            How does it work?
           </Heading>
           <List>
@@ -112,8 +116,12 @@ export default class Presentation extends React.Component {
           </List>
         </Slide>
 
+        <Slide textColor="text">
+          <Heading size={6}>Demo time</Heading>
+          <Image src="https://media.giphy.com/media/A34x7CEKUkCyc/giphy.gif" width="500px" />
+        </Slide>
+
         <Slide transition={['fade']} bgColor="primary" textColor="text">
-          <Heading size={6} textColor="text">Still not convinced, Roy?</Heading>
           <Editor />
         </Slide>
       </Deck>
