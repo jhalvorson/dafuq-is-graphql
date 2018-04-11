@@ -1,7 +1,5 @@
-// Import React
 import React from 'react';
 
-// Import Spectacle Core tags
 import {
   BlockQuote,
   Cite,
@@ -14,21 +12,21 @@ import {
   Text,
 } from 'spectacle';
 
-// Import theme
 import createTheme from 'spectacle/lib/themes/default';
+import { One } from './slides';
 
-// Require CSS
 require('normalize.css');
 
 const theme = createTheme(
   {
-    primary: 'white',
-    secondary: '#1F2022',
-    tertiary: '#03A9FC',
-    quartenary: '#CECECE',
+    primary: '#181920',
+    secondary: '#292633',
+    tertiary: '#3D394A',
+    quartenary: '#23212B',
+    text: '#FFFFFF',
   },
   {
-    primary: 'Montserrat',
+    primary: '-apple-system',
     secondary: 'Helvetica',
   }
 );
@@ -40,41 +38,33 @@ export default class Presentation extends React.Component {
         transition={['zoom', 'slide']}
         transitionDuration={500}
         theme={theme}
+        progress="bar"
       >
-        <Slide transition={['zoom']} bgColor="primary">
-          <Heading size={1} fit caps lineHeight={1} textColor="secondary">
-            Spectacle Boilerplate
+        <Slide transition={['fade']} bgColor="primary">
+          <Heading size={1} fit lineHeight={1} textColor="text">
+            Dafuq is GraphQL?
           </Heading>
-          <Text margin="10px 0 0" textColor="tertiary" size={1} fit bold>
-            open the presentation/index.js file to get started
+          <Text margin="50px 0 0" textColor="text" textSize="40px">
+            GraphQL, it's so 🔥 right now
           </Text>
         </Slide>
-        <Slide transition={['fade']} bgColor="tertiary">
-          <Heading size={6} textColor="primary" caps>
-            Typography
+        <Slide transition={['fade']} bgColor="primary" textColor="text">
+
+          <Heading size={6} textColor="text" caps>
+            Technically speaking
           </Heading>
-          <Heading size={1} textColor="secondary">
-            Heading 1
-          </Heading>
-          <Heading size={2} textColor="secondary">
-            Heading 2
-          </Heading>
-          <Heading size={3} textColor="secondary">
-            Heading 3
-          </Heading>
-          <Heading size={4} textColor="secondary">
-            Heading 4
-          </Heading>
-          <Heading size={5} textColor="secondary">
-            Heading 5
-          </Heading>
-          <Text size={6} textColor="secondary">
-            Standard text
-          </Text>
+
+          <BlockQuote textColor="text">
+            <Quote textColor="text" textSize="30px" lineHeight="48px">
+              GraphQL is a query language for your API, and a server-side runtime for executing queries by using a type system you define for your data. GraphQL isn't tied to any specific database or storage engine and is instead backed by your existing code and data.
+            </Quote>
+            <Cite textColor="text">graphql.org</Cite>
+          </BlockQuote>
+
         </Slide>
-        <Slide transition={['fade']} bgColor="primary" textColor="tertiary">
-          <Heading size={6} textColor="secondary" caps>
-            Standard List
+        <Slide transition={['fade']} bgColor="primary" textColor="text">
+          <Heading size={6} caps>
+            Cool. What actually is it?
           </Heading>
           <List>
             <ListItem>Item 1</ListItem>
@@ -83,11 +73,9 @@ export default class Presentation extends React.Component {
             <ListItem>Item 4</ListItem>
           </List>
         </Slide>
-        <Slide transition={['fade']} bgColor="secondary" textColor="primary">
-          <BlockQuote>
-            <Quote>Example Quote</Quote>
-            <Cite>Author</Cite>
-          </BlockQuote>
+        <Slide transition={['fade']} bgColor="secondary" textColor="text">
+          <Heading size={6}>Still not convinced, Roy?</Heading>
+
         </Slide>
       </Deck>
     );
