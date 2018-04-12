@@ -1,3 +1,7 @@
+.graphiql-container {
+  /* border: 6px solid #72FBCC; */
+}
+
 .graphiql-container .topBar {
   background: #1c1d26;
   padding: 25px 0;
