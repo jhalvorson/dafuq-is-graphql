@@ -8,24 +8,29 @@
  *
  *
  * 1. Dafuq is GraphQL
- * 2. From the spec
+ * 2. Working with Rest
+ *  2.1 Multiple endpoints
+ *  2.2 No way to predict what the data structure is
+ *  2.3 Application state management issues
+ * 3. This time, dafuq is GraphQL?
+ * 4. From the spec
  *    - Quote from the spec
- * 3. In English
+ * 5. In English
  *    - Breakdown what it is
- * 4. The benefits
+ * 6. The benefits
  *    - Breakdown the benefits
  *    - Caching
- * 5. How does it work?
- * 6. How does it compare to REST?
+ * 7. How does it work?
+ * 8. How does it compare to REST?
  *    - 4 comparisons: pros and cons
- * 7. Demo
- * 8. How do we get started?
- * 9. WordPress
- * 10. D8, Symfony
- * 11. Node
- * 12. Clientside
+ * 9. Demo
+ * 10. How do we get started?
+ * 11. WordPress
+ * 12. D8, Symfony
+ * 13. Node
+ * 14. Clientside
  *      - Apollo
- * 13. Scenarios:
+ * 15. Scenarios:
  *    - Routing?
  *    - Authentication?
  *
