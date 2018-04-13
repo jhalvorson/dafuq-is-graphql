@@ -58,12 +58,12 @@ export default class Presentation extends React.Component {
   render() {
     return (
       <Deck
-        transition={['zoom', 'slide']}
+        transition={['zoom', 'fade']}
         transitionDuration={500}
         theme={theme}
         progress="bar"
       >
-        <Slide transition={['fade']} bgColor="primary">
+        <Slide bgColor="primary">
           <Heading size={1} fit lineHeight={1} textColor="text">
             Dafuq is GraphQL?
           </Heading>
@@ -71,7 +71,7 @@ export default class Presentation extends React.Component {
             so 🔥 right now
           </Text>
         </Slide>
-        <Slide transition={['fade']} bgColor="primary" textColor="text">
+        <Slide bgColor="primary" textColor="text">
           <Heading size={6}>🤓</Heading>
           <Heading size={6} textColor="text" >
             Technically speaking
@@ -86,7 +86,7 @@ export default class Presentation extends React.Component {
 
         </Slide>
 
-        <Slide transition={['fade']} bgColor="primary" textColor="text">
+        <Slide bgColor="primary" textColor="text">
           <Heading size={6}>😏</Heading>
           <Heading size={6}  textColor="text">
           What actually is it?
@@ -99,7 +99,7 @@ export default class Presentation extends React.Component {
           </List>
         </Slide>
 
-        <Slide transition={['fade']} bgColor="primary" textColor="text">
+        <Slide bgColor="primary" textColor="text">
           <Heading size={6}  textColor="text">
            The benefits
           </Heading>
@@ -111,7 +111,7 @@ export default class Presentation extends React.Component {
           </List>
         </Slide>
 
-        <Slide transition={['fade']} bgColor="primary" textColor="text">
+        <Slide bgColor="primary" textColor="text">
           <Heading size={6}  textColor="text">
            How does it work?
           </Heading>
@@ -123,7 +123,7 @@ export default class Presentation extends React.Component {
           </List>
         </Slide>
 
-        <Slide transition={['fade']} bgColor="primary" textColor="text">
+        <Slide bgColor="primary" textColor="text">
           <Heading size={6}  textColor="text">
            Schemas & SDL
           </Heading>
